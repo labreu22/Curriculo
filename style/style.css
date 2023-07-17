@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap'); /*peguei no Google Fonts*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; o "vr" é para dizer que sempre manterá todo o corpo preenchido, sem deixar espaços em branco */
+    box-sizing: border-box; /*serve para deixar a imagem dentro do corpo do Pai, encolhendo e se adequando ao tamnanho do conteúdo do elemento pai*/
+    background-color: black;
+    color: #F6F6F6;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #22D4FD;
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 15%; /*aqui é onde deu um distanciamento entre a parte de cima para onde está a imagem e os textos abaixo*/
+    display: flex; /* o FlexBox é uma ferramenta do CSS que visa organizar os elementos de uma página HTML de forma dinâmica e mantendo o layout flexível*/
+    align-items: center;
+    justify-content: space-between; /*ele deixa um espaço entros os blocos do HTML*/
+}
+
+.apresentacao__conteundo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteundo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif; /* achei isso no site do Google Fonts, aonde eu consigo tanto a importação da fonte quanto como eu representaria aqui no código*/
+}
+
+.apresentacao__conteudo__texto {
+    text-decoration: none;
+    color: #22D4FD;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.apresentacao__conteundo__paragrafo {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px; /*esse gap da o espaçamento entre os botões que foram colocados os links do git e instagran*/
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__ancora {
+    /* background-color: #22D4FD; atalho para comentário "Ctrl + K + C" */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__ancora:hover { /* tudo q estiver aqui dentro, será estilizado quando o mousa passar por cima, criando assim uma animação*/
+    background-color: #272727;
+    /* padding: 3%; */
+}
+
+.rodape {
+    color: black;
+    background-color: #22D4FD;
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
